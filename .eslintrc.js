@@ -1,0 +1,14 @@
+module.exports = {
+  plugins: ["prettier", "unicorn"],
+  extends: [
+    "airbnb-base",
+    "plugin:unicorn/recommended",
+    "plugin:prettier/recommended",
+    "prettier",
+    "prettier/unicorn",
+  ],
+  env: {
+    es6: true,
+    browser: true,
+  },
+};

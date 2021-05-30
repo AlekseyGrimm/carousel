@@ -1,0 +1,51 @@
+html, body, ul, li{
+  margin: 0;
+  padding: 0;
+}
+
+#gallery{
+  width: 860px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#gallery .photos{
+  position: relative;
+  height: 670px;
+}
+
+#gallery .photos img{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#gallery .photos img.showed{
+  opacity: 1;
+}
+
+.prev, .next {
+  cursor: pointer;
+  padding: 16px;
+  color: #715b53;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.buttons {
+  position: absolute;
+  top: 18rem;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
